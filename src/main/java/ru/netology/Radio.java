@@ -78,12 +78,14 @@ public class Radio {
         }
         currentVolume++;
     }
+
     public void decreaseVolume() {
         if (currentVolume == minVolume) {
             return;
         }
         currentVolume--;
     }
+
     public void increaseChannel() {
         if (currentChannal == maxChannal) {
             this.currentChannal = minChannal;
@@ -99,5 +101,4 @@ public class Radio {
         }
         currentChannal--;
     }
-
 }
